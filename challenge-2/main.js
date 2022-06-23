@@ -58,7 +58,7 @@ for (i = 0; i < pizzas.length; i++){
 // PUNTO E
 for (i = 0; i < pizzas.length; i++){
     
-    console.log(`La pizza "${pizzas[i].nombre}" tiene un valor de "${pizzas[i].valor}" pesos.`)
+    console.log(`La pizza "${pizzas[i].nombre}" tiene un valor de "${pizzas[i].valor}" pesos`)
     
 }
 
