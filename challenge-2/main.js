@@ -20,7 +20,7 @@ let pizza2 = new Pizza (2,"Napolitana",ingredientesNapolitana,700)
 let pizza3 = new Pizza (3,"Papa",ingredientesPapa,1000)
 let pizza4 = new Pizza (4,"Cuatro Quesos",ingredientes4Quesos,900)
 let pizza5 = new Pizza (5,"Yankee",ingredientesYankee,1200)
-let pizza6 = new Pizza (6,"Solo Queso",ingredientesNapolitana,300)
+let pizza6 = new Pizza (6,"Solo Queso",ingredientesSoloQueso,300)
 
 /* ITERACIONES */
 
