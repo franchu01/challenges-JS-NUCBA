@@ -37,7 +37,7 @@ let idPizza;
 form.addEventListener("submit",(e)=>{
     e.preventDefault();
     idPizza = document.getElementById("pizza");
-    console.log(pizzas[pizza.value]);
+    //console.log(pizzas[pizza.value]);
 
     if(pizza.value > 6 || pizza.value < 1){
         console.log("ERROR PIZZA DESCONOCIDA");
@@ -48,6 +48,4 @@ form.addEventListener("submit",(e)=>{
         h4.innerText = pizzas[pizza.value].valor;
     }
     
-
-
 })
