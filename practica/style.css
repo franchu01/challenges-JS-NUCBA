@@ -1,0 +1,24 @@
+#container__options{
+    background-color: black;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+}
+.ctn__btn{
+    background-color: black;
+    color: wheat;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.option{
+    display: none;
+}
+#container__options li{
+    color: white;
+}
+.show{
+    display: flex;
+}
