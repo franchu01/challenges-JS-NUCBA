@@ -2,6 +2,10 @@ body{
     background-color: rgb(178, 135, 219);
 }
 
+.hide{
+    display: none;
+}
+
 html{
     color: darkmagenta;
 }
@@ -21,12 +25,25 @@ html{
     color: white;
 };
 
+#boton_eliminar{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: darkmagenta;
+    color: white;
+}
+
 .card{
     display: flex;
     background-color: black;
     margin: 70px;
     padding: 20px;
     color: white;
-    flex-direction: column;
+    flex-direction: column-reverse;
     border-radius: 12px;
 }
+
+.container_cards{
+    color: rgb(21, 4, 37);
+}
+

@@ -15,12 +15,12 @@ let ingredientes4Quesos = ["Muzzarella","Queso Azul","Parmesano","Queso Fresco"]
 let ingredientesYankee = ["Cheddar","Salsa Roja", "Panceta"]
 let ingredientesSoloQueso = ["Muzzarella"]
 
-let pizza1 = new Pizza (1,"Clasica",ingredientesMuzzarella,400,"./clasica.jpg")
-let pizza2 = new Pizza (2,"Napolitana",ingredientesNapolitana,700,"./clasica.jpg")
-let pizza3 = new Pizza (3,"Papa",ingredientesPapa,1000,"./clasica.jpg")
-let pizza4 = new Pizza (4,"Cuatro Quesos",ingredientes4Quesos,900,"./clasica.jpg")
-let pizza5 = new Pizza (5,"Yankee",ingredientesYankee,1200,"./clasica.jpg")
-let pizza6 = new Pizza (6,"Solo Queso",ingredientesSoloQueso,300,"./clasica.jpg")
+let pizza1 = new Pizza (1,"CLASICA",ingredientesMuzzarella,400,"../img/clasica.jfif")
+let pizza2 = new Pizza (2,"NAPOLITANA",ingredientesNapolitana,700,"../img/napolitana.jfif")
+let pizza3 = new Pizza (3,"PAPA",ingredientesPapa,1000,"../img/papa.jpg")
+let pizza4 = new Pizza (4,"CUATRO QUESOS",ingredientes4Quesos,900,"../img/4quesos.jfif")
+let pizza5 = new Pizza (5,"YANKEE",ingredientesYankee,1200,"../img/yankee.jfif")
+let pizza6 = new Pizza (6,"SOLO QUESO",ingredientesSoloQueso,300,"../img/solo queso.jfif")
 
 let i;
 let pizzas = [pizza1, pizza2, pizza3, pizza4, pizza5, pizza6];
@@ -36,7 +36,7 @@ let idPizza;
 let cards = document.getElementById("container_cards")
 
 function showPizza(pizza){
-    cards.innerHTML = "";
+    //cards.innerHTML = "";
     let card = document.createElement("div");
     card.classList.add("card");
     let nombre = document.createElement("h1");
@@ -60,10 +60,11 @@ function showPizza(pizza){
 form.addEventListener("submit",(e)=>{
     e.preventDefault();
     idPizza = document.getElementById("pizza");
+
     let error=0;
 
     pizzas.forEach(pizza => {
-        if(pizza.nombre == idPizza.value){
+        if(pizza.nombre == idPizza.value.toUpperCase()){
             showPizza(pizza)
             error++
         };
@@ -71,6 +72,13 @@ form.addEventListener("submit",(e)=>{
     if(error == 0 ){ // Significa que no encontro pizza
         console.log("Pizza Desconocida, ERROR")
     }
+})
+
+let btnEliminate = document.getElementById("boton_eliminar")
+
+btnEliminate.addEventListener("click",(e)=>{
+    e.preventDefault();
+    cards.classList.toggle("hide")
 })
 
 
