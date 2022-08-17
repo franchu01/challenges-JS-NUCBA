@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(178, 135, 219);
+}
+
+html{
+    color: darkmagenta;
+}
+
+#pizza{
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: darkmagenta;
+    color: white;
+}
+#boton{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: darkmagenta;
+    color: white;
+};
+
+.card{
+    display: flex;
+    background-color: black;
+    margin: 70px;
+    padding: 20px;
+    color: white;
+    flex-direction: column;
+    border-radius: 12px;
+}
